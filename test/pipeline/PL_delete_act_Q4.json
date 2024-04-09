@@ -1,0 +1,39 @@
+{
+	"name": "PL_delete_act_Q4",
+	"properties": {
+		"description": "4. delete all the files and folders from movies folder",
+		"activities": [
+			{
+				"name": "act_del",
+				"type": "Delete",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_del_all_files",
+						"type": "DatasetReference"
+					},
+					"enableLogging": false,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Delete activity"
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-03-26T14:58:26Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

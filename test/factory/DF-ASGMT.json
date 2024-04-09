@@ -1,0 +1,9 @@
+{
+	"name": "DF-ASGMT",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "63920dc7-147d-4620-a8e7-114bb8d76f47",
+		"tenantId": "1741fd3e-6831-4f97-b7fd-65dd33f42246"
+	}
+}
